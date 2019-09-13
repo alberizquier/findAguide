@@ -1,0 +1,53 @@
+div.container{
+    background: rgba(0,172,138,1);
+    background: -moz-linear-gradient(45deg, rgba(0,172,138,1) 0%, rgba(0,172,138,1) 11%, rgba(0,88,103,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,172,138,1)), color-stop(11%, rgba(0,172,138,1)), color-stop(100%, rgba(0,88,103,1)));
+    background: -webkit-linear-gradient(45deg, rgba(0,172,138,1) 0%, rgba(0,172,138,1) 11%, rgba(0,88,103,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(0,172,138,1) 0%, rgba(0,172,138,1) 11%, rgba(0,88,103,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(0,172,138,1) 0%, rgba(0,172,138,1) 11%, rgba(0,88,103,1) 100%);
+    background: linear-gradient(45deg, rgba(0,172,138,1) 0%, rgba(0,172,138,1) 11%, rgba(0,88,103,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ac8a', endColorstr='#005867', GradientType=1 );
+    border: 0px solid #000000;
+    width: 100vw;
+    height: 100vh;
+}
+
+div.logo{
+    padding-top: 20px;
+    text-align: center;
+}
+
+div.logo img{
+    width: 200px;
+}
+
+div.title{
+    color: white;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16pt;
+    padding-top: 20px;
+}
+
+div.row{
+    margin-top: 40px;
+    height: 175px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 20pt;
+    color: #003943;
+}
+
+div.row div.background{
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+        -moz-border-radius: 15px 15px 15px 15px;
+        -webkit-border-radius: 15px 15px 15px 15px;
+    text-align: center;
+}
+
+div.row div.background img{
+    width: 50px;
+    padding-top: 40px;
+}
+
