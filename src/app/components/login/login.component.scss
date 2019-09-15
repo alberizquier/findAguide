@@ -1,19 +1,5 @@
-div.container{
-    background: rgba(0,172,138,1);
-    background: -moz-linear-gradient(45deg, rgba(0,172,138,1) 0%, rgba(0,172,138,1) 11%, rgba(0,88,103,1) 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,172,138,1)), color-stop(11%, rgba(0,172,138,1)), color-stop(100%, rgba(0,88,103,1)));
-    background: -webkit-linear-gradient(45deg, rgba(0,172,138,1) 0%, rgba(0,172,138,1) 11%, rgba(0,88,103,1) 100%);
-    background: -o-linear-gradient(45deg, rgba(0,172,138,1) 0%, rgba(0,172,138,1) 11%, rgba(0,88,103,1) 100%);
-    background: -ms-linear-gradient(45deg, rgba(0,172,138,1) 0%, rgba(0,172,138,1) 11%, rgba(0,88,103,1) 100%);
-    background: linear-gradient(45deg, rgba(0,172,138,1) 0%, rgba(0,172,138,1) 11%, rgba(0,88,103,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ac8a', endColorstr='#005867', GradientType=1 );
-    border: 0px solid #000000;
-    width: 100vw;
-    height: 100vh;
-    padding-top: 120px
-}
-
 div.row{
+    margin-top: 120px;
     height: 300px;
 }
 
@@ -73,6 +59,10 @@ div.row div.background table tr td.remember{
 
 div.row div.background table tr td.forgot{
     text-align: right;
+}
+
+div.second{
+    margin-top: 10px;
 }
 
 div.register{
