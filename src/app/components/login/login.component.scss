@@ -1,5 +1,12 @@
+div.container{
+    background-image: url(../../../assets/desktop_bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
 div.row{
-    margin-top: 120px;
+    padding-top: 120px;
     height: 300px;
 }
 
