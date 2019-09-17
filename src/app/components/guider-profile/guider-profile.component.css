@@ -1,0 +1,43 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+.card{
+    margin-top: 2.5%;
+    margin-left: 10%;
+    border: solid #00ab8c;
+    width: 40%;
+}
+.tour{
+    margin-top: 2.5%;
+    margin-left: 10%;
+    width: 80%;
+}
+.services{
+    margin-top: 2.5%;
+    margin-left: 10%;
+    width: 80%;
+}
+hr{
+    border: 1.5px solid #00ab8c;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.stars{
+    width: 60%;
+    height: 20%;
+}
+.chat{
+    float: right;
+    margin-top: 2.5%;
+    width: 40%;
+    margin-right: 10%;
+}
+.button{
+    margin-top: 5%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ff1e42;
+    border: 2px solid #f1b321;
+}
+
