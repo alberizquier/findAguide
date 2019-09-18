@@ -7,6 +7,7 @@ import { LoginComponent } from './components/login/login.component';
 import { SelectorComponent } from './components/selector/selector.component';
 import { TestComponent } from './components/test/test.component';
 import { RegisterFormComponent } from './components/register-form/register-form.component';
+import { GuiderListComponent } from './components/guider-list/guider-list.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { RegisterFormComponent } from './components/register-form/register-form.
     LoginComponent,
     SelectorComponent,
     TestComponent,
-    RegisterFormComponent
+    RegisterFormComponent,
+    GuiderListComponent
   ],
   imports: [
     BrowserModule,
