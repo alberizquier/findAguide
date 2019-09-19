@@ -10,6 +10,7 @@ import {GuiderBudgetComponent} from './components/guider-budget/guider-budget.co
 import {GuiderBudgetHistoricComponent} from './components/guider-budget-historic/guider-budget-historic.component';
 import {SideNavBarComponent} from './components/side-nav-bar/side-nav-bar.component';
 
+import { GuiderListComponent } from './components/guider-list/guider-list.component';
 
 @NgModule({
   declarations: [
