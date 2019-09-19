@@ -1,3 +1,8 @@
+.hide{
+   display: none; 
+}
+
+
 .imgGuideProfilePic{
     width:300px;
     height:300px;
@@ -22,7 +27,21 @@ font-family: 'Raleway', sans-serif;
  //font-family: 'Ubuntu', sans-serif;
 font-family: 'Raleway', sans-serif;
 color:rgb(0, 57, 67);
+position: -webkit-sticky;
+position: sticky;
+top: 0;
  
+}
+
+div#UserNavBarArrows{
+    position: absolute;
+    float: right;
+    height: 80px;
+}
+
+.imgNav{
+    position: -webkit-sticky;
+    top:0;
 }
 
 .nav-link{
