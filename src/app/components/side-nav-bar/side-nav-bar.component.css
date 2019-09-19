@@ -19,7 +19,6 @@ font-family: 'Raleway', sans-serif;
  width: 900px;
  height: 100%;
  background-color: rgb(0, 172, 139);
- //font-family: 'Ubuntu', sans-serif;
 font-family: 'Raleway', sans-serif;
 color:rgb(0, 57, 67);
  
@@ -59,7 +58,7 @@ color:rgb(0, 57, 67);
     width: 400px;
     min-height: 50px;
     border-radius: 5px;
-    //box-shadow: 0 0 10px rgba(0,0,0,.1);
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
     background-color:  rgb(0, 57, 67);
 }
 .rating{
@@ -77,7 +76,7 @@ color:rgb(0, 57, 67);
     position: relative;
     display: block;
     float: right;
-    background: url(../../../assets/images/userNavBarPics/star-off-big.png);
+    background-image: url('../../../assets/userNavBarPics/star-off-big.png');
     background-size: 30px 30px;
 }
 .rating > label:before{
@@ -86,7 +85,7 @@ color:rgb(0, 57, 67);
     content: '';
     width: 30px;
     height: 30px;
-    background: url(../../../assets/images/userNavBarPics/star-on-big.png);
+    background: url('../../../assets/userNavBarPics/star-on-big.png');
     background-size: 30px 30px;
     transition: opacity 0.2s linear;
 }

@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavegadorComponent implements OnInit {
 
-  show:boolean = false;
-
   constructor() { }
 
   ngOnInit() {
