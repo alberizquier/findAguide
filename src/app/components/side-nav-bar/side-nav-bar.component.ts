@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UserNavBarService } from 'src/app/services/user-nav-bar-service.service';
+import { WidthHandler } from '../../services/nav-bar-width-handler.service';
 
 @Component({
   selector: 'app-side-nav-bar',
@@ -6,48 +8,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./side-nav-bar.component.css']
 })
 export class SideNavBarComponent implements OnInit {
+  public navBarStatus: Boolean = false;
 
-  constructor() { }
+
+  public widthHandler: WidthHandler;
+  constructor() {
+    this.widthHandler = new WidthHandler("userNavBarMenuCard", false, 0, 1000, 2);
+  }
 
   ngOnInit() {
   }
 
   openUserNavBar() {
-
-    let userNavBarMenuCard = document.getElementById("userNavBarMenuCard");
-    let container = userNavBarMenuCard.parentElement;
-    let parentWidth = container.clientWidth;
-
-    let UserNavBarArrows = document.getElementById("UserNavBarArrows");
-    let UserNavBarArrowsWidth = UserNavBarArrows.clientWidth;
-    userNavBarMenuCard.style.width = `${parentWidth -  UserNavBarArrowsWidth}px`;
-
-    let btnCloseUserNavBar = document.getElementById("btnCloseUserNavBar");
-    let btnOpenUserNavBar = document.getElementById("btnOpenUserNavBar");
-    btnOpenUserNavBar.style.display = "none";
-    btnCloseUserNavBar.style.display = "block";
-
+    this.widthHandler.show();
   }
+
 
   closeUserNavBar() {
-    let userNavBarMenuCard = document.getElementById("userNavBarMenuCard");
-    let container = userNavBarMenuCard.parentElement;
-    let parentWidth = container.clientWidth;
-
-    let UserNavBarArrows = document.getElementById("UserNavBarArrows");
-    let UserNavBarArrowsWidth = UserNavBarArrows.clientWidth;
-    userNavBarMenuCard.style.width = `${UserNavBarArrowsWidth}px`;
-
-
-    let btnCloseUserNavBar = document.getElementById("btnCloseUserNavBar");
-    let btnOpenUserNavBar = document.getElementById("btnOpenUserNavBar");
-    btnOpenUserNavBar.style.display = "block";
-    btnCloseUserNavBar.style.display = "none";
+    this.widthHandler.hide();
   }
-
 
 
 
 
 
 }
+
+
