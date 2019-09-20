@@ -1,11 +1,18 @@
 *{
     font-family: 'Ubuntu', sans-serif;
 }
-.card{
+.header{
     margin-top: 2.5%;
     margin-left: 10%;
+    width: 80%;
+}
+.card{
+    margin-top: 2.5%;
     border: solid #00ab8c;
-    width: 40%;
+}
+.card-img{
+    width: 100%;
+    height: 100%;
 }
 .tour{
     margin-top: 2.5%;
@@ -28,9 +35,7 @@ hr{
 }
 .chat{
     float: right;
-    margin-top: 2.5%;
     width: 40%;
-    margin-right: 10%;
 }
 .button{
     margin-top: 5%;

@@ -5,9 +5,13 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { SelectorComponent } from './components/selector/selector.component';
 import { RegisterFormComponent } from './components/register-form/register-form.component';
+import { GuiderBudgetComponent} from './components/guider-budget/guider-budget.component';
+import { GuiderBudgetHistoricComponent} from './components/guider-budget-historic/guider-budget-historic.component';
+import { SideNavBarComponent} from './components/side-nav-bar/side-nav-bar.component';
 import { GuiderListComponent } from './components/guider-list/guider-list.component';
+import { NavegadorComponent } from './components/navegador/navegador.component';
 import { GuiderProfileComponent } from './components/guider-profile/guider-profile.component';
-import { GuiderEditProfileComponent } from './components/guider-edit-profile/guider-edit-profile.component';
+import { FiltersComponent } from './components/filters/filters.component';
 
 @NgModule({
   declarations: [
@@ -16,8 +20,12 @@ import { GuiderEditProfileComponent } from './components/guider-edit-profile/gui
     SelectorComponent,
     RegisterFormComponent,
     GuiderListComponent,
+    SideNavBarComponent,
+    NavegadorComponent,
     GuiderProfileComponent,
-    GuiderEditProfileComponent,
+    FiltersComponent,
+    GuiderBudgetComponent,
+    GuiderBudgetHistoricComponent
   ],
   imports: [
     BrowserModule,
