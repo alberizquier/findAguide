@@ -13,6 +13,7 @@ import { GuiderListComponent } from './components/guider-list/guider-list.compon
 import { NavegadorComponent } from './components/navegador/navegador.component';
 import { GuiderProfileComponent } from './components/guider-profile/guider-profile.component';
 import { FiltersComponent } from './components/filters/filters.component';
+import { MonthDestinationsComponent } from './components/month-destinations/month-destinations.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FiltersComponent } from './components/filters/filters.component';
     GuiderProfileComponent,
     FiltersComponent,
     GuiderBudgetComponent,
-    GuiderBudgetHistoricComponent
+    GuiderBudgetHistoricComponent,
+    MonthDestinationsComponent
   ],
   imports: [
     BrowserModule,

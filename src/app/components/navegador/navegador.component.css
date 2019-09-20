@@ -2,20 +2,20 @@
     background-image: url('../../../assets/images/map.jpg');
     background-size: cover;
     background-position: center;
-    padding-top: 3%;
+    padding-top: 10%;
     height: 250px;
     text-align: center;
     color: #003943;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 21pt;
+    font-size: 18pt;
 }
 
 div.container img.icon{
-  width: 5%;
+  width: 10%;
 }
 
 div.dest input{
-  width: 300px;
+  width: 80%;
   height: 30px;
   font-size: 12pt;
   padding-left: 10px;
@@ -33,3 +33,37 @@ div.dest input::placeholder{
   color: rgb(190, 190, 190);
 }
 
+@media only screen  and (min-width : 1224px) {
+
+  .container{
+    background-image: url('../../../assets/images/map.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 3%;
+    height: 250px;
+    text-align: center;
+    color: #003943;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24pt;
+}
+
+div.container img.icon{
+  width: 5%;
+}
+
+div.dest input{
+  width: 40%;
+  height: 30px;
+  font-size: 12pt;
+  padding-left: 10px;
+  border: 1px solid #00AB8C;
+  border-radius: 50px 50px 50px 50px;
+  -moz-border-radius: 50px 50px 50px 50px;
+  -webkit-border-radius: 50px 50px 50px 50px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+}
+
+}

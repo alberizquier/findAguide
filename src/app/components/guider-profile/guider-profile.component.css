@@ -3,13 +3,36 @@
 }
 .header{
     margin-top: 2.5%;
-    margin-left: 10%;
-    width: 80%;
+    margin-left: 2%;
+    width: 88%;
 }
 .card{
     margin-top: 2.5%;
     border: solid #00ab8c;
+    width: 89%;
 }
+
+.card-certificates{
+    text-decoration: none;
+}
+
+span{
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+div.card-lang{
+    padding-top: 35px;
+}
+
+div.rating{
+    padding-top: 20px;
+}
+
+div.rating img{
+    width: 8%;
+}
+
 .card-img{
     width: 100%;
     height: 100%;
@@ -37,12 +60,13 @@ hr{
     float: right;
     width: 40%;
 }
-.button{
+
+button{
     margin-top: 5%;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #ff1e42;
-    border: 2px solid #f1b321;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    color: white;
+    background-color: #00ab8c;
 }
 

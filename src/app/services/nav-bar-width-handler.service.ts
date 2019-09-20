@@ -54,12 +54,11 @@ export class WidthHandler {
     }
     this._width = value;
     if (this.element) {
-      this.element.style.width = `${value}px`;
+      this.element.style.width = `${value}%`;
     }
   }
   //
   show() {
-    console.log(this.minW, this.maxW, this.width);
     if (this.width < this.maxW) {
       this.showing = true;
       this.hidding = false;

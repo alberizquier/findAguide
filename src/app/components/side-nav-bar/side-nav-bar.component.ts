@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UserNavBarService } from 'src/app/services/user-nav-bar-service.service';
+import { UserNavBarService } from 'src/app/services/user-nav-bar.service';
 import { WidthHandler } from '../../services/nav-bar-width-handler.service';
 
 @Component({
@@ -13,7 +13,7 @@ export class SideNavBarComponent implements OnInit {
 
   public widthHandler: WidthHandler;
   constructor() {
-    this.widthHandler = new WidthHandler("userNavBarMenuCard", false, 0, 1000, 2);
+    this.widthHandler = new WidthHandler("userNavBarMenuCard", false, 0, 100, 2);
   }
 
   ngOnInit() {
