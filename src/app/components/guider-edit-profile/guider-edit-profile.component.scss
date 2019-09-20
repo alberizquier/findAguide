@@ -1,0 +1,100 @@
+.profile{
+  margin-left: 1%;
+  }
+img{
+  height: 50px;
+}
+h3{
+  color:#003943;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 1%;
+  font-size: 1em;
+}
+button{
+  color:#00AC8B;
+  font-weight: bold;
+  border-radius: 8px;
+  font-family: 'Raleway', sans-serif;
+  background-color: transparent;
+  width: 60px;
+  border: 2px solid #00AC8B;
+  margin-left: 1%;
+  font-size: 0.9em;
+}
+.delete{
+  color: #FF1E42;
+  border: 2px solid #FF1E42;
+  font-size: 0.9em;
+}
+.add{
+  color:#F1B321;
+  border: 2px solid #F1B321;
+  font-size: 0.9em;
+}
+p{
+  font-family: 'Raleway', sans-serif;
+  margin-left: 1%;
+  color:#003943;
+  font-size: 0.9em;
+}
+input{
+  border-radius: 8px;
+  font-family: 'Raleway', sans-serif;
+  margin-left: 1%;
+  font-size: 0.9em;
+}
+li{
+  font-family: 'Raleway', sans-serif;
+  color:#003943;
+}
+
+@media only screen  and (min-width : 1224px) {
+  img{
+    height: 100px;
+  }
+.profile{
+margin-left: 1%;
+}
+h3{
+  color:#003943;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 1%;
+}
+button{
+  color:#00AC8B;
+  font-weight: bold;
+  border-radius: 8px;
+  font-family: 'Raleway', sans-serif;
+  background-color: transparent;
+  width: 80px;
+  border: 2px solid #00AC8B;
+  margin-left: 1%;
+  font-size: 0.9em;
+}
+.delete{
+  color: #FF1E42;
+  border: 2px solid #FF1E42;
+  font-size: 0.9em;
+}
+.add{
+  color:#F1B321;
+  border: 2px solid #F1B321;
+  font-size: 0.9em;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+  margin-left: 1%;
+  color:#003943;
+  font-size: 0.9em;
+}
+input{
+  border-radius: 8px;
+  font-family: 'Raleway', sans-serif;
+  margin-left: 1%;
+}
+li{
+  font-family: 'Raleway', sans-serif;
+  color:#003943;
+}
+}

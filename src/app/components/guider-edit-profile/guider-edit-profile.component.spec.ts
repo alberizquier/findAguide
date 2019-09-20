@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProfileListComponent } from './profile-list.component';
+import { GuiderEditProfileComponent } from './guider-edit-profile.component';
 
-describe('ProfileListComponent', () => {
-  let component: ProfileListComponent;
-  let fixture: ComponentFixture<ProfileListComponent>;
+describe('GuiderEditProfileComponent', () => {
+  let component: GuiderEditProfileComponent;
+  let fixture: ComponentFixture<GuiderEditProfileComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProfileListComponent ]
+      declarations: [ GuiderEditProfileComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ProfileListComponent);
+    fixture = TestBed.createComponent(GuiderEditProfileComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
