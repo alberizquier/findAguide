@@ -10,10 +10,11 @@ import { WidthHandler } from '../../services/nav-bar-width-handler.service';
 export class SideNavBarComponent implements OnInit {
   public navBarStatus: Boolean = false;
 
+    public width: number;
 
   public widthHandler: WidthHandler;
   constructor() {
-    this.widthHandler = new WidthHandler("userNavBarMenuCard", false, 0, 100, 2);
+    this.widthHandler = new WidthHandler("userNavBarMenuCard", false, 20, 100, 1);
   }
 
   ngOnInit() {
@@ -26,6 +27,10 @@ export class SideNavBarComponent implements OnInit {
 
   closeUserNavBar() {
     this.widthHandler.hide();
+  }
+
+  open() {
+
   }
 
 

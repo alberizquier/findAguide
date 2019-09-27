@@ -1,0 +1,36 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    background-image: url(../../../assets/desktop_bg.jpg);
+    color: white;
+}
+
+nav p{
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+}
+
+button{
+    height: 50px;
+    margin-left: 80%;
+}
+
+button img{
+    width: 30px;
+}
+
+img.logo{
+    width: 100px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 25px;
+    position: absolute;
+}
+
+hr{
+    border: 0.5px solid white;
+}

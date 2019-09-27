@@ -1,22 +1,60 @@
 *{
+    font-family: 'Raleway', sans-serif;
+}
+
+div.both{
+    height: 100%;
+    margin-left: 30px;
+    overflow-y: scroll;
+}
+
+hr{
+    border: 1px solid #00ab8c;
+}
+
+h5, h3{
     font-family: 'Ubuntu', sans-serif;
 }
 .contTour{
-    margin-top: 5%;
-    margin-left: 10%;
-    width: 80%;
+    margin-top: 2.5%;
+    margin-left: 2%;
+    width: 88%;
+    margin-bottom: 5%;
 }
 .genTour{
     float: right;
 }
 .contServices{
-    margin-top: 5%;
-    margin-left: 10%;
-    width: 80%;
+    margin-top: 2.5%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    width: 88%;
 }
-.card-img{
-    width: 100%;
-    height: 100%;
+div.pic1{
+    background-image: url(../../../assets/images/foto2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+}
+div.pic2{
+    background-image: url(../../../assets/images/foto1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+}
+div.pic3{
+    background-image: url(../../../assets/images/foto2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+}
+div.icon{
+    background-image: url(../../../assets/logo/icon_white.png);
+    background-color: #00ab8c;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150px;
 }
 .btn{
     border: solid #00ab8c;
@@ -33,4 +71,84 @@
 }
 .card{
     border: solid #ccd1d1;
+}
+div.list-group-item{
+    margin: 10px 0;
+}
+
+@media only screen and (min-width : 1200px) {
+    *{
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    div.both{
+        height: 100%;
+        overflow-y: scroll;
+    }
+    
+    hr{
+        border: 1px solid #00ab8c;
+    }
+    
+    h5, h3{
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    .contTour{
+        margin-top: 2.5%;
+        margin-left: 2%;
+        width: 88%;
+        margin-bottom: 5%;
+    }
+    .genTour{
+        float: right;
+    }
+    .contServices{
+        margin-top: 2.5%;
+        margin-left: 2%;
+        margin-bottom: 5%;
+        width: 88%;
+    }
+    div.pic1{
+        background-image: url(../../../assets/images/foto2.jpg);
+        background-size: cover;
+        background-position: center;
+        height: auto;
+    }
+    div.pic2{
+        background-image: url(../../../assets/images/foto1.jpg);
+        background-size: cover;
+        background-position: center;
+        height: auto;
+    }
+    div.pic3{
+        background-image: url(../../../assets/images/foto2.jpg);
+        background-size: cover;
+        background-position: center;
+        height: auto;
+    }
+    div.icon{
+        background-image: url(../../../assets/logo/icon_white.png);
+        background-color: #00ab8c;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: auto;
+    }
+    .btn{
+        border: solid #00ab8c;
+        background-color: #00ab8c;
+        color: white;
+    }
+    .generate{
+        border-radius: 50%;
+    }
+    .delete{
+        border: solid #ff1e42;
+        background-color: #ff1e42;
+        float: right;
+    }
+    .card{
+        border: solid #ccd1d1;
+    }
 }

@@ -8,11 +8,16 @@ import { RegisterFormComponent } from './components/register-form/register-form.
 import { GuiderBudgetComponent} from './components/guider-budget/guider-budget.component';
 import { GuiderBudgetHistoricComponent} from './components/guider-budget-historic/guider-budget-historic.component';
 import { SideNavBarComponent} from './components/side-nav-bar/side-nav-bar.component';
-import { GuiderListComponent } from './components/guider-list/guider-list.component';
 import { NavegadorComponent } from './components/navegador/navegador.component';
 import { GuiderProfileComponent } from './components/guider-profile/guider-profile.component';
 import { FiltersComponent } from './components/filters/filters.component';
 import { MonthDestinationsComponent } from './components/month-destinations/month-destinations.component';
+import { EditExperienceComponent } from './components/edit-experience/edit-experience.component';
+import { GuiderChatComponent } from './components/guider-chat/guider-chat.component';
+import { GuiderListComponent } from './components/guider-list/guider-list.component';
+import { GuiderEditProfileComponent } from './components/guider-edit-profile/guider-edit-profile.component';
+import { UserChatComponent } from './components/user-chat/user-chat.component';
+import { NavBarSupComponent } from './components/nav-bar-sup/nav-bar-sup.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +32,13 @@ import { MonthDestinationsComponent } from './components/month-destinations/mont
     FiltersComponent,
     GuiderBudgetComponent,
     GuiderBudgetHistoricComponent,
-    MonthDestinationsComponent
+    MonthDestinationsComponent,
+    EditExperienceComponent,
+    GuiderChatComponent,
+    GuiderListComponent,
+    GuiderEditProfileComponent,
+    UserChatComponent,
+    NavBarSupComponent
   ],
   imports: [
     BrowserModule,

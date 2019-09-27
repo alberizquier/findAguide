@@ -1,14 +1,16 @@
 div.menu{
     background-image: url(../assets/desktop_bg.jpg);
     padding: 0;
+    position: fixed;
 }
+
+div.menu-res{
+    background-image: url(../assets/desktop_bg.jpg);
+    padding: 0;
+    margin: 0;
+}
+
 div.right{
     padding: 0;
-}
-.main-container {
-    max-width: 100vw; // <= try this
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
 }

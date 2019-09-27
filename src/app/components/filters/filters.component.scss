@@ -1,6 +1,7 @@
 div.contenedor{
-    padding: 1% 0 0 2%;
-    height: 250px;
+    margin-top: 10px;
+    margin-left: 30px;
+    
 }
 
 h2{
@@ -23,7 +24,7 @@ div.col button{
     border: 1px solid #00ab8c;
     font-family: 'Ubuntu', sans-serif;
     color: #00ab8c;
-    width: 100%;
+    width: 90%;
     margin-bottom: 10px;
 }
 
@@ -31,7 +32,7 @@ div.col button:active{
     background-color: #00ab8c;
     font-family: 'Ubuntu', sans-serif;
     color: white;
-    width: 100%;
+    width: 90%;
     margin-bottom: 10px;
 }
 
@@ -44,25 +45,104 @@ select{
     border: 1px solid #00ab8c;
     border-radius: 50px;
     color: #00ab8c;
+    width: 90%;
 }
 
 div.dates{
-    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 div.dates input{
-    color: #00ab8c;
-}
-
-div.dates input{
-    border: 1px solid #00ab8c;
-    border-radius: 50px;
-    padding-left: 2px;
-}
-
-input.destination{
-    width: 100%;
     border: 1px solid #00ab8c;
     border-radius: 50px;
     padding-left: 10px;
+    margin-top: 10px;
+    color: #ccd1d1;
+}
+
+.input-group{
+    width: 90%;
+}
+
+input.destination{
+    width: 90%;
+    border: 1px solid #00ab8c;
+    border-radius: 50px;
+    padding-left: 10px;
+}
+
+@media (min-width:700px){
+    div.contenedor{
+        margin: 0;
+        padding: 1% 0 0 2%;
+        height: 250px;
+    }
+    
+    h2{
+        font-family: 'Ubuntu',sans-serif;
+        color: #003943;
+    }
+    
+    hr{
+        border: 1px solid #00ab8c;
+        margin: 0 auto 0 0;
+        width: 90%;
+    }
+    
+    h5{
+        font-weight: bold;
+        color: #003943;
+    }
+    
+    div.col button{
+        border: 1px solid #00ab8c;
+        font-family: 'Ubuntu', sans-serif;
+        color: #00ab8c;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    div.col button:active{
+        background-color: #00ab8c;
+        font-family: 'Ubuntu', sans-serif;
+        color: white;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    div.interest{
+        color: #00ab8c; 
+        font-weight: bold;
+    }
+    
+    select{
+        border: 1px solid #00ab8c;
+        border-radius: 50px;
+        color: #00ab8c;
+    }
+    
+    div.dates{
+        margin-left: 5%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    div.dates input{
+        border: 1px solid #00ab8c;
+        border-radius: 50px;
+        padding-left: 10px;
+        color: #ccd1d1;
+    }
+    
+    input.destination{
+        width: 100%;
+        border: 1px solid #00ab8c;
+        border-radius: 50px;
+        padding-left: 10px;
+    }   
+
+    div.row{
+        padding: 8px 0;
+    }
 }

@@ -1,72 +1,130 @@
-*{
-    font-family: 'Ubuntu', sans-serif;
-}
-.header{
-    margin-top: 2.5%;
-    margin-left: 2%;
-    width: 88%;
-}
-.card{
-    margin-top: 2.5%;
-    border: solid #00ab8c;
-    width: 89%;
+div.body{
+    padding: 10px;
 }
 
-.card-certificates{
-    text-decoration: none;
+div.back{
+    margin: 0px 0 10px;
 }
 
-span{
+div.back button{
+    background-color: #FF1E42;
+    color: white;
+    width: 80px;
+    height: 50px;
     font-weight: bold;
-    font-size: 14pt;
+    border: none;
+    border-radius: 25px;
 }
 
-div.card-lang{
-    padding-top: 35px;
+h5{
+    text-align: center;
+    font-size: 18pt;
+}
+
+li.list-group-item{
+    font-size: 14pt;
+    font-weight: bold;
+    color: #00AB8C;
+    text-align: center;
+}
+
+li.list-group-item span{
+    font-size: 12pt;
 }
 
 div.rating{
-    padding-top: 20px;
+    text-align: center;
 }
 
 div.rating img{
-    width: 8%;
+    width: 30px;
 }
 
-.card-img{
-    width: 100%;
-    height: 100%;
-}
-.tour{
-    margin-top: 2.5%;
-    margin-left: 10%;
-    width: 80%;
-}
-.services{
-    margin-top: 2.5%;
-    margin-left: 10%;
-    width: 80%;
-}
-hr{
-    border: 1.5px solid #00ab8c;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-.stars{
-    width: 60%;
-    height: 20%;
-}
-.chat{
-    float: right;
-    width: 40%;
-}
-
-button{
-    margin-top: 5%;
-    width: 200px;
-    height: 50px;
-    border-radius: 50px;
+li.list-group-item button{
+    background-color: #00AB8C;
     color: white;
-    background-color: #00ab8c;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
 }
 
+h4{
+    margin-top: 25px;
+}
+
+hr{
+    margin-top: -5px;
+    border: 0.5px solid #00AB8C;
+}
+
+div.tour{
+    margin: 10px 0;
+}
+
+div.tour span{
+    color: #00AB8C;
+    font-weight: bold;
+}
+
+div.tour ul{
+    list-style: none;
+    margin-left: -20px;
+}
+
+div.service{
+    margin: 10px 0;
+    padding: 10px;
+}
+
+div.service span{
+    color: #00AB8C;
+    font-weight: bold;
+}
+
+@media (min-width: 700px){
+    div.back{
+        margin: 0px 0 10px;
+        text-align: right;
+    }
+    
+    div.back button{
+        background-color: #FF1E42;
+        color: white;
+        width: 50%;
+        height: 50px;
+        font-weight: bold;
+        border: none;
+        border-radius: 25px;
+    }
+    
+    div.card{
+        padding: 0;
+    }
+
+    div.card-body h5{
+        text-align: left;
+    }
+
+    div.card-body p{
+        font-size: 10pt;
+    }
+
+    li.list-group-item{
+        text-align: left;
+        font-size: 10pt;
+    }
+
+    li.list-group-item span{
+        font-size: 10pt;
+    }
+    
+    div.rating{
+        text-align: left;
+    }
+    
+    div.rating img{
+        width: 20px;
+    }
+}

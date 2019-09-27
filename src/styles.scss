@@ -3,3 +3,12 @@
 body{
     font-family: FontAwesome, "Raleway", sans-serif;
 }
+.row {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+[class*="col"]{
+    margin: 0;
+    padding: 0;
+}

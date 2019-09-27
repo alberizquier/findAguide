@@ -1,11 +1,11 @@
 .container{
-    background-image: url('../../../assets/images/map.jpg');
+    background-image: url('../../../assets/images/navegador_pic.jpg');
     background-size: cover;
     background-position: center;
     padding-top: 10%;
     height: 250px;
     text-align: center;
-    color: #003943;
+    color: white;
     font-family: 'Ubuntu', sans-serif;
     font-size: 18pt;
 }
@@ -36,13 +36,13 @@ div.dest input::placeholder{
 @media only screen  and (min-width : 1224px) {
 
   .container{
-    background-image: url('../../../assets/images/map.jpg');
+    background-image: url('../../../assets/images/navegador_pic.jpg');
     background-size: cover;
     background-position: center;
     padding-top: 3%;
     height: 250px;
     text-align: center;
-    color: #003943;
+    color: white;
     font-family: 'Ubuntu', sans-serif;
     font-size: 24pt;
 }
