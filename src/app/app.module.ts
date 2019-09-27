@@ -18,6 +18,8 @@ import { GuiderListComponent } from './components/guider-list/guider-list.compon
 import { GuiderEditProfileComponent } from './components/guider-edit-profile/guider-edit-profile.component';
 import { UserChatComponent } from './components/user-chat/user-chat.component';
 import { NavBarSupComponent } from './components/nav-bar-sup/nav-bar-sup.component';
+import { Chat1Component } from './components/chat1/chat1.component';
+import { Chat2Component } from './components/chat2/chat2.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { NavBarSupComponent } from './components/nav-bar-sup/nav-bar-sup.compone
     GuiderListComponent,
     GuiderEditProfileComponent,
     UserChatComponent,
-    NavBarSupComponent
+    NavBarSupComponent,
+    Chat1Component,
+    Chat2Component
   ],
   imports: [
     BrowserModule,

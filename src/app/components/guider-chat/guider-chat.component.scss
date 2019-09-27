@@ -7,7 +7,7 @@ li{
 }
 
 div.row{
-  height: 100%;
+  height: 800px;
   background-color: #003943;
 }
 
@@ -47,9 +47,10 @@ div.textarea{
 }
 
 div.text button.send{
-  width: 100%;
+  width: 80%;
   height: 40%;
   margin-bottom: 30%;
+  margin-left: 15px;
   border-radius: 15px;
   background-color: #00AB8C;
   border: 2px solid white;
@@ -59,8 +60,10 @@ div.text button.send{
 }
 
 div.text button.attach{
-  width: 100%;
+  width: 80%;
   height: 40%;
+  margin-top: -10px;
+  margin-right: 12px;
   border-radius: 15px;
   background-color: #F1B321;
   border: 2px solid white;
@@ -70,9 +73,10 @@ div.text button.attach{
 }
 
 .usuary{
-  padding-top: 10px;
-  height: 623px;
+  padding: 10px;
+  height: 720px;
   overflow-y: scroll;
+  border-radius: 25px;
 }
 
 .friend{
@@ -132,7 +136,7 @@ img{
 
 .messages{
   width: 97%;
-  height: 425px;
+  height: 500px;
   margin-left: 1%;
   float: right;
   margin-right: 2%;
@@ -183,7 +187,8 @@ img{
 
 div.textarea textarea{
   width: 96%;
-  height: 130px;
+  height: 160px;
   margin: 2%;
+
   border: none;
 }
