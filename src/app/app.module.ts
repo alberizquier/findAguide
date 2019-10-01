@@ -12,6 +12,9 @@ import { GuiderListComponent } from './components/guider-list/guider-list.compon
 import { NavegadorComponent } from './components/navegador/navegador.component';
 import { GuiderProfileComponent } from './components/guider-profile/guider-profile.component';
 import { FiltersComponent } from './components/filters/filters.component';
+import { MonthDestinationsComponent } from './components/month-destinations/month-destinations.component';
+import { UserChatComponent } from './components/user-chat/user-chat.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,11 +28,14 @@ import { FiltersComponent } from './components/filters/filters.component';
     GuiderProfileComponent,
     FiltersComponent,
     GuiderBudgetComponent,
-    GuiderBudgetHistoricComponent
+    GuiderBudgetHistoricComponent,
+    MonthDestinationsComponent,
+    UserChatComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
