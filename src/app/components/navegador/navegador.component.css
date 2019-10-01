@@ -45,6 +45,7 @@ div.dest input::placeholder{
     color: white;
     font-family: 'Ubuntu', sans-serif;
     font-size: 24pt;
+    max-width: 100%;
 }
 
 div.container img.icon{

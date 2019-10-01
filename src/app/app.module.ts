@@ -20,6 +20,10 @@ import { UserChatComponent } from './components/user-chat/user-chat.component';
 import { NavBarSupComponent } from './components/nav-bar-sup/nav-bar-sup.component';
 import { Chat1Component } from './components/chat1/chat1.component';
 import { Chat2Component } from './components/chat2/chat2.component';
+import { DestinationsComponent } from './components/destinations/destinations.component';
+import { MainComponent } from './components/main/main.component';
+import { AuthComponent } from './components/auth/auth.component';
+import { MessagesComponent } from './components/messages/messages.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +46,11 @@ import { Chat2Component } from './components/chat2/chat2.component';
     UserChatComponent,
     NavBarSupComponent,
     Chat1Component,
-    Chat2Component
+    Chat2Component,
+    DestinationsComponent,
+    MainComponent,
+    AuthComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,

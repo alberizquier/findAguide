@@ -1,3 +1,7 @@
+.second a{
+    color: white;
+}
+
 div.container{
     background-image: url(../../../assets/desktop_bg.jpg);
     background-size: cover;
@@ -79,4 +83,10 @@ div.register{
     text-align: center;
     color: white;
     font-size: 10pt;
+}
+
+@media (min-width: 768px) {
+div.container {
+    max-width: 100%;
+}
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-navegador',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navegador.component.css']
 })
 export class NavegadorComponent implements OnInit {
-
-  constructor() { }
+  show = true;
+  constructor(private router: Router) { 
+  }
 
   ngOnInit() {
+    console.log(this.show)
   }
+
+  destination() {
+    this.show = false;
+  }
+
 
 }
