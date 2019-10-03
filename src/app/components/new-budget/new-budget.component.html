@@ -1,0 +1,79 @@
+<div class="row sup">
+    <div class="menu-res d-lg-none d-md-none d-sm-block d-block col-sm-12 col-12">
+        <app-nav-bar-sup></app-nav-bar-sup>
+    </div>
+</div>
+<div class="row">
+    <div class="d-lg-block d-md-block d-sm-none d-none col-sm-6 col-6">
+
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="body">
+            <div class="row data">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <h3>Guider Details</h3>
+                    <span>Name: </span>Example<br>
+                    <span>Id: </span>38974598<br>
+                    <hr>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <h3>Client Details</h3>
+                    <span>Name: </span>Example<br>
+                    <span>Id: </span>38974598<br>
+                    <hr>
+                </div>
+            </div>
+            <div class="row content">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <h3>Tour Dates</h3>
+                    <span>From:</span>
+                    <input type="date"> <br>
+                    <span>Until:</span>
+                    <input type="date" style="margin-left: 14px"> <br>
+                    <hr>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <h3>Add Tours</h3>
+                    <select name="tours" id="tours">
+                        <option selected>Choose tours...</option>
+                        <option value="1">Tour 1</option>
+                        <option value="2">Tour 2</option>
+                        <option value="3">Tour 3</option>
+                    </select>
+                    <hr>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <h3>Add Experiences</h3>
+                    <select name="tours" id="tours">
+                        <option selected>Choose experiences...</option>
+                        <option value="1">Experience 1</option>
+                        <option value="2">Experience 2</option>
+                        <option value="3">Experience 3</option>
+                    </select>
+                    <hr>
+                </div>
+                <div class="row amount">
+                    <p><span>Total amount is:</span><strong> 200,00$</strong></p>
+                </div>
+                <div class="row buttons">
+                    <div class="d-lg-block d-md-block d-sm-none d-none col-lg-6 col-md-6 col-sm-0 col-0">
+                        <button style="background-color: #FF1E42" routerLink="/messages"
+                            routerLinkActive="active">Cancel</button>
+                    </div>
+                    <div class="d-lg-block d-md-block d-sm-none d-none col-lg-6 col-md-6 col-sm-0 col-0">
+                        <button routerLink="/messages" routerLinkActive="active">Send</button>
+                    </div>
+                </div>
+                <div class="row buttons">
+                    <div class="d-lg-none d-md-none d-sm-block d-block col-sm-6 col-6">
+                        <button style="background-color: #FF1E42" routerLink="/chat2"
+                            routerLinkActive="active">Cancel</button>
+                    </div>
+                    <div class="d-lg-none d-md-none d-sm-block d-block col-sm-6 col-6">
+                        <button routerLink="/chat2" routerLinkActive="active">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

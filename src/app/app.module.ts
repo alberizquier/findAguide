@@ -8,6 +8,7 @@ import { RegisterFormComponent } from './components/register-form/register-form.
 import { GuiderBudgetComponent} from './components/guider-budget/guider-budget.component';
 import { GuiderBudgetHistoricComponent} from './components/guider-budget-historic/guider-budget-historic.component';
 import { SideNavBarComponent} from './components/side-nav-bar/side-nav-bar.component';
+import { FormsModule } from '@angular/forms';
 import { NavegadorComponent } from './components/navegador/navegador.component';
 import { GuiderProfileComponent } from './components/guider-profile/guider-profile.component';
 import { FiltersComponent } from './components/filters/filters.component';
@@ -24,6 +25,7 @@ import { DestinationsComponent } from './components/destinations/destinations.co
 import { MainComponent } from './components/main/main.component';
 import { AuthComponent } from './components/auth/auth.component';
 import { MessagesComponent } from './components/messages/messages.component';
+import { NewBudgetComponent } from './components/new-budget/new-budget.component';
 
 @NgModule({
   declarations: [
@@ -50,10 +52,12 @@ import { MessagesComponent } from './components/messages/messages.component';
     DestinationsComponent,
     MainComponent,
     AuthComponent,
-    MessagesComponent
+    MessagesComponent,
+    NewBudgetComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],

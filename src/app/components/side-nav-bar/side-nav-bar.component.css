@@ -59,7 +59,7 @@ div.description{
     display: inline-block;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.nav-link.active {
     background-color: #f1b321;
 }
 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 
+
 @Component({
   selector: 'app-navegador',
   templateUrl: './navegador.component.html',
@@ -8,6 +9,7 @@ import {Router} from '@angular/router';
 })
 export class NavegadorComponent implements OnInit {
   show = true;
+  place: String;
   constructor(private router: Router) { 
   }
 

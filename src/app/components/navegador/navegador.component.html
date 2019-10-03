@@ -2,7 +2,8 @@
    <div><img src="../../../assets/logo/icon_white.png" class="icon" alt="" ></div>
     Where are you going to travel?
     <div class="dest">
-        <input type="text" (keyup.enter)="destination()" placeholder="&#xf002; Try with London">
+        <input type="text" (keyup.enter)="destination()" placeholder="&#xf002; Try with London" [(ngModel)] = "place">
     </div>
 </div>
-<app-filters *ngIf='!show'></app-filters>
+<app-month-destinations *ngIf='show'></app-month-destinations>
+<app-filters [place]='place' *ngIf='!show'></app-filters>

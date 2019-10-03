@@ -89,7 +89,16 @@ textarea{
   margin-top: 10px;
   height: 50px;
 }
+div.menu-res{
+  background-image: url(../../../assets/desktop_bg.jpg);
+  padding: 0;
+  margin: 0;
+}
 @media (min-width: 700px) {
+  .background{
+    height: 826px;
+  }
+
   .foto{
       margin-left: 5%;
       width: 80%;
@@ -98,6 +107,15 @@ textarea{
       padding: 5%;
       border: 1px solid black;
   }
+
+  .foto .card-body{
+    background-color: white;
+  }
+
+  .foto .card-title{
+    color: black;
+  }
+
   .datos{
       margin-left: 15%;
       width: 80%;
@@ -110,7 +128,7 @@ textarea{
       margin-left: 5%;
       width: 80%;
       background-color:white;
-      margin-top: 5%;
+      margin-top: 2%;
       padding: 5%;
       border: 1px solid black;
   }
@@ -118,12 +136,188 @@ textarea{
       margin-left: 5%;
       width: 80%;
       background-color:white;
-      margin-top: 5%;
+      margin-top: 2%;
       padding: 5%;
       border: 1px solid black;
   }
   textarea{
       width: 100%;
-      height: 265px;
+      height: 153px;
   }
+  
+  div.foto div.card{
+    background-color: white;
+    background-size: cover;
+}
+
+  .card{
+    background-color: #003943;
+    background-size: cover;
+  }
+
+.imgGuideProfilePic{
+    padding: 20px 0;
+    width:90%;
+}   
+
+div.background h4{
+  color: black;
+  text-align: left;
+  padding-top: 15px;
+}
+
+h4{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 14pt;
+    margin-top: -7%;
+}
+
+h5{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+div.languages{
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+
+div.rating{
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    height: 100px;
+}
+
+div.description{
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+
+button.save{
+  margin-top: 38px;
+}
+
+.subText h4{
+    width: 100%;
+    text-align: center;
+}
+
+.userNavBarMenuCard{
+    width: 100%;
+    height: 100vh;
+    background-image: none;/*url(../../../assets/desktop_bg.jpg);*/
+    font-family: 'Raleway', sans-serif;
+    color:#f1b321;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #f1b321;
+}
+
+.userNavBarMenuCard div.card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+div#UserNavBarArrows{
+    position: absolute;
+    float: right;
+    height: 80px;
+}
+
+.imgNav{
+    position: -webkit-sticky;
+    top:0;
+}
+
+.nav-link{
+    color: white; 
+}
+
+.navbar-default .navbar-nav > .active{
+    color: white;
+    background: #d65c14;
+}
+
+.card-header{
+    color:white;
+}
+
+.card-body{
+    color: white;
+    background-color: #00ab8c;
+}
+
+.card-footer{
+    color:white;
+}
+
+.span{
+    color: white;
+}
+
+.wrapper {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.wrapper img {
+    width: 10%;
+}
+
+.card-footer{
+    text-align: center;
+    background-color: #003943;
+}
+
+.card-footer table{
+    width: 100%
+}
+
+.card-footer img{
+    width: 35%;
+}
+
+.logo{
+    text-align: center;
+    background-color: #00ab8c;
+}
+
+.logo img{
+    width: 40%;
+    margin-bottom: 20%;
+}
+
+div.arrows{
+    float: right;
+    position: absolute;
+    z-index: 1000;
+    left: 90%;
+    padding: 0;
+}
+
+div.arrows button{
+    width: 50px;
+    height: 35px;
+    background-color: #00ab8c;
+    padding: 0;
+}
+
+div.arrows button img{
+    width: 20px;
+    margin-right: 80%;
+}
 }
