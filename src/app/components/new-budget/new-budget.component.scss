@@ -109,4 +109,41 @@ div.menu-res{
         width: 80%;
         border-bottom: 1px solid white;
     }
+    div.profile div.body{
+        padding: 10px;
+    }
+    div.tour{
+        margin: 2.5%;
+        width: 45%;
+        display: inline-block;
+    }
+    div.service{
+        width: 95%;
+        height: 130px;
+        margin: 2.5%;
+        padding: 5px;
+    }
+    
+    div.tour button{
+        background-color: #00AB8C;
+        color: white;
+        width: 35px;
+        height: 35px;
+        border-radius: 25px;
+        float: right;
+        font-size: 16pt;
+        font-weight: bold;
+    }
+
+    div.service button{
+        background-color: #00AB8C;
+        color: white;
+        width: 35px;
+        height: 35px;
+        border-radius: 25px;
+        float: right;
+        font-size: 16pt;
+        font-weight: bold;
+        margin-right: 25px;
+    }
 }

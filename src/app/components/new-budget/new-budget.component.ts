@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { type } from 'os';
 
 @Component({
   selector: 'app-new-budget',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewBudgetComponent implements OnInit {
 
+  tour1: Boolean = false;
+  tour2: Boolean = false;
+  tour3: Boolean = false;
+  tour4: Boolean = false;
+  xp1: Boolean = false;
+  xp2: Boolean = false;
+  xp3: Boolean = false;
+  xp4: Boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+
+  add() {
+    
   }
 
 }

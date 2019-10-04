@@ -26,6 +26,7 @@ import { MainComponent } from './components/main/main.component';
 import { AuthComponent } from './components/auth/auth.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { NewBudgetComponent } from './components/new-budget/new-budget.component';
+import { UserEditProfileComponent } from './components/user-edit-profile/user-edit-profile.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { NewBudgetComponent } from './components/new-budget/new-budget.component
     MainComponent,
     AuthComponent,
     MessagesComponent,
-    NewBudgetComponent
+    NewBudgetComponent,
+    UserEditProfileComponent
   ],
   imports: [
     BrowserModule,
