@@ -26,6 +26,8 @@ import { AuthComponent } from './components/auth/auth.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { HttpClientModule } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import { NewBudgetComponent } from './components/new-budget/new-budget.component';
+import { UserEditProfileComponent } from './components/user-edit-profile/user-edit-profile.component';
 
 @NgModule({
   declarations: [
@@ -52,13 +54,16 @@ import {FormsModule} from '@angular/forms';
     DestinationsComponent,
     MainComponent,
     AuthComponent,
-    MessagesComponent
+    MessagesComponent,
+    NewBudgetComponent,
+    UserEditProfileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,9 +1,5 @@
 <div class="userNavBarMenuCard" id="userNavBarMenuCard">
   <div class="card">
-    <!-- <div class="arrows">
-      <button class="open"><img src="../../../assets/images/open.png" (click)="openUserNavBar()" alt=""></button> <br>
-      <button class="close"><img src="../../../assets/images/close.png" (click)="closeUserNavBar()" alt=""></button>
-    </div> -->
     <div class="card-header">
       <div class="row">
         <div class="col text-center">
@@ -28,29 +24,23 @@
     <div class="card-body">
       <div class="nav flex-column nav-pills" style="font-family: 'Raleway', sans-serif;" id="v-pills-tab" role="tablist"
         aria-orientation="vertical">
-        <a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" role="tab" aria-controls="v-pills-profile"
-        aria-selected="true" routerLink="/guider-profile" routerLinkActive="active">Profile</a>
-        <a class="nav-link" style="font-family: 'Raleway', sans-serif;" id="v-pills-messages-tab" data-toggle="pill"
-          href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
-        <a class="nav-link" style="font-family: 'Raleway', sans-serif;" id="v-pills-mytrips-tab" data-toggle="pill"
-          href="#v-pills-mytrips" role="tab" aria-controls="v-pills-mytrips" aria-selected="false">My Trips</a>
-        <a class="nav-link" style="font-family: 'Raleway', sans-serif;" id="v-pills-settings-tab" data-toggle="pill"
-          href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
-        <a class="nav-link" style="font-family: 'Raleway', sans-serif;" id="v-pills-logout-tab" data-toggle="pill"
-          href="#v-pills-logout" role="tab" aria-controls="v-pills-logout" aria-selected="false">Log Out</a>
+        <a class="nav-link" id="v-pills-profile-tab" routerLink="/guider-edit-profile" routerLinkActive="active">Profile</a>
+        <a class="nav-link" id="v-pills-messages-tab" routerLink="/messages" routerLinkActive="active">Messages</a>
+        <a class="nav-link" id="v-pills-mytrips-tab" routerLink="/guider-budget-historic" routerLinkActive="active">My Trips</a>
+        <a class="nav-link" id="v-pills-logout-tab" routerLink="" routerLinkActive="active">Log Out</a>
       </div>
     </div>
     <div class="logo">
-      <img src="../../../assets/logo/icon_white.png" alt="">
+      <a routerLink="/main" routerLinkActive="active"><img src="../../../assets/logo/icon_white.png" alt=""></a>
     </div>
     <div class="card-footer">
       <table>
         <tr>
-          <td class="fb"><a href="http://facebook.com"><img src="../../../assets/logo/fb.png"></a></td>
-          <td class="tw"><a href="http://twitter.com"><img src="../../../assets/logo/tw.png"></a></td>
-          <td class="ig"><a href="http://instagram.com"><img src="../../../assets/logo/ig.png"></a></td>
+          <td class="fb"><a href="http://facebook.com" target="_blank"><img src="../../../assets/logo/fb.png"></a></td>
+          <td class="tw"><a href="http://twitter.com" target="_blank"><img src="../../../assets/logo/tw.png"></a></td>
+          <td class="ig"><a href="http://instagram.com" target="_blank"><img src="../../../assets/logo/ig.png"></a></td>
         </tr>
       </table>
     </div>
-
   </div>
+</div>

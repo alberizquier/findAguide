@@ -22,10 +22,12 @@ import { UserChatComponent } from './components/user-chat/user-chat.component';
 import { AuthComponent } from './components/auth/auth.component';
 import { MainComponent } from './components/main/main.component';
 import { MessagesComponent } from './components/messages/messages.component';
+import { NewBudgetComponent } from './components/new-budget/new-budget.component';
+import { UserEditProfileComponent } from './components/user-edit-profile/user-edit-profile.component';
 
 
 const routes: Routes = [
-  { path: '', component: AuthComponent },
+  { path: '', component: AuthComponent, pathMatch: 'full' },
   { path: 'main', component: MainComponent },
   { path: 'messages', component: MessagesComponent },
   { path: 'chat1', component: Chat1Component },
@@ -47,7 +49,8 @@ const routes: Routes = [
   { path: 'register-form', component: RegisterFormComponent },
   { path: 'side-nav-bar', component: SideNavBarComponent },
   { path: 'user-chat', component: UserChatComponent },
-
+  { path: 'new-budget', component: NewBudgetComponent },
+  { path: 'user-edit-profile', component: UserEditProfileComponent },
 ];
 
 @NgModule({

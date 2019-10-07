@@ -1,60 +1,74 @@
-<div class="background">
-  <div class="row">
-    <div class=" col-12 col-sm-6 col-md-6 col-lg-6">
-      <div class="datos">
-        <h4>Personal Information</h4>
-        <hr>
-        <p class="name">Name:</p>
-        <input type="text">
-        <p class="date">Date of birth:</p>
-        <input type="text">
-        <p class="mail">E-mail:</p>
-        <input type="text">
-        <p class="password">Password:</p>
-        <input type="text">
-        <p class="descripcion">Bio:</p>
-        <textarea></textarea>
-      </div>
+<div>
+  <div class="row sup">
+    <div class="menu-res d-lg-none d-md-none d-sm-block d-block col-sm-12 col-12">
+      <app-nav-bar-sup></app-nav-bar-sup>
     </div>
-    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-      <div class="foto">
-        <h4>Profile picture</h4>
-        <hr>
-        <div class="card mb-3" style="max-width: 540px;">
-          <div class="row no-gutters">
-            <div class="col-md-4">
-              <img src="../../../assets/logo/icon.png" class="card-img" alt="...">
+  </div>
+  <div class="row">
+    <div class="menu d-lg-block d-md-block d-sm-none d-none col-lg-2 col-md-2">
+      <app-side-nav-bar></app-side-nav-bar>
+    </div>
+    <div class="right col-lg-10 col-md-10 col-sm-12 col-12">
+      <div class="background">
+        <div class="row">
+          <div class=" col-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="datos">
+              <h4>Personal Information</h4>
+              <hr>
+              <p class="name">Name:</p>
+              <input type="text">
+              <p class="date">Date of birth:</p>
+              <input type="date">
+              <p class="mail">E-mail:</p>
+              <input type="email">
+              <p class="password">Password:</p>
+              <input type="text">
+              <p class="descripcion">Bio:</p>
+              <textarea></textarea>
             </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Add your picture here</h5>
-                <button class="btn">Upload</button>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="foto">
+              <h4>Profile picture</h4>
+              <hr>
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="../../../assets/logo/icon.png" class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Add your picture here</h5>
+                      <button class="btn">Upload</button>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
+            <div class="idiomas">
+              <h4>Languages</h4>
+              <hr>
+              <input type="text">
+              <br>
+              <button class="btn">Add</button>
+            </div>
+            <div class="certificados">
+              <h4>Certifications</h4>
+              <hr>
+              <input type="text">
+              <br>
+              <button class="btn">Add</button>
             </div>
           </div>
         </div>
-      </div>
-      <div class="idiomas">
-        <h4>Languages</h4>
-        <hr>
-        <input type="text">
+        <div class="row">
+          <div class="col-12">
+            <button routerLink="/main" routerLinkActive="active" class="save">Save Changes</button>
+          </div>
+        </div>
         <br>
-        <button class="btn">Add</button>
-      </div>
-      <div class="certificados">
-        <h4>Certifications</h4>
-        <hr>
-        <input type="text">
-        <br>
-        <button class="btn">Add</button>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-12">
-      <button class="save">Save Changes</button>
-    </div>
-  </div>
-  <br>
 </div>

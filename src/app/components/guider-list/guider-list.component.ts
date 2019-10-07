@@ -1,7 +1,7 @@
-import { Component, OnInit, Input, ViewChild, Output } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, Output, OnChanges } from '@angular/core';
 import {ApiService} from '../../services/api.service';
 import { Router } from '@angular/router';
-import { UserData } from 'src/app/api/userApi';
+
 
 
 
@@ -10,8 +10,9 @@ import { UserData } from 'src/app/api/userApi';
   templateUrl: './guider-list.component.html',
   styleUrls: ['./guider-list.component.scss']
 })
-export class GuiderListComponent implements OnInit {
- usersList: any = [];
+export class GuiderListComponent implements OnInit,OnChanges {
+
+
 
   constructor(
     public apiService: ApiService,
@@ -24,16 +25,13 @@ export class GuiderListComponent implements OnInit {
   @Input() guiderList;
 
   ngOnInit() {
-    //this.loadUsers();
-  }
 
-  loadUsers(){
-    return this.apiService.findByLocation(location).subscribe((data : UserData) => {
-      this.usersList = data.data;
-      console.log(document.querySelector('#guiderRating'));
-    })
   }
 
 
+  ngOnChanges() {
+    console.log("GuiderList", this.guiderList)
+  }
 
 }
+

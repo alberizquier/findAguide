@@ -21,7 +21,7 @@ export class ApiService {
       'Content-Type': 'application/json'
     })
   }
-//User's CRUD methods
+//USERS CRUD methods
   createUser(userInfo): Observable<User> {
     return this.http.post<User>(this.apiURL + '/users/registerForm', userInfo).pipe(
       retry(1),
@@ -37,7 +37,12 @@ export class ApiService {
   deleteUser(id): Observable<boolean> {
     return this.http.delete<boolean>(this.apiURL + '/users/:uid' + id);
   }
-
+  getAllGuiders(): Observable<User[]> {
+    return this.http.get<User[]>(this.apiURL + '/users');
+  }
+  getTours(id) {
+    return this.http.get(this.apiURL + '/tours/:gid');
+  }
 // User's Aux methods
     // Error handling
     handleError(error) {
@@ -55,8 +60,7 @@ export class ApiService {
 
 /*
 FILTERS TO DO:
-Destination
-Destination + language
+
 Destination + busyDates
 Destination + Tourinterest
 Destination + Language + BusyDates

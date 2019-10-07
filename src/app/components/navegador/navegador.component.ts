@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 
+
 @Component({
   selector: 'app-navegador',
   templateUrl: './navegador.component.html',
@@ -8,7 +9,8 @@ import {Router} from '@angular/router';
 })
 export class NavegadorComponent implements OnInit {
   show = true;
-  constructor(private router: Router) { 
+  place: string;
+  constructor(private router: Router) {
   }
 
   ngOnInit() {
@@ -16,7 +18,9 @@ export class NavegadorComponent implements OnInit {
   }
 
   destination() {
-    this.show = false;
+    //this.show = false;
+    console.log('hola');
+    this.router.navigate(['/filters', {dest:this.place}]);
   }
 
 

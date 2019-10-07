@@ -15,7 +15,7 @@ div.data span{
     font-weight: bold;
 }
 
-div.data hr{
+hr{
     border: 0.5px solid #00AB8C;
 }
 
@@ -35,6 +35,17 @@ div.content input{
     padding-left: 10px;
     border: 0.5px solid #00AB8C;
     border-radius: 25px;
+}
+
+div.content select{
+    margin-top: 5px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border: 0.5px solid #00AB8C;
+    border-radius: 25px;
+    width: 90%;
+    height: 30px;
+    background-color: white;
 }
 
 div.content div.card{
@@ -65,6 +76,21 @@ div.amount p{
     margin: 0 auto;
 }
 
+div.buttons{
+    text-align: center;
+    margin: 10px 0;
+}
+
+div.buttons button{
+    margin: 0 auto;
+    background-color: #00AB8C;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    width: 100px;
+    height: 35px;
+}
+
 div.menu-res{
     background-image: url(../../../assets/desktop_bg.jpg);
     padding: 0;
@@ -82,5 +108,42 @@ div.menu-res{
         background-color: #00AB8C;
         width: 80%;
         border-bottom: 1px solid white;
+    }
+    div.profile div.body{
+        padding: 10px;
+    }
+    div.tour{
+        margin: 2.5%;
+        width: 45%;
+        display: inline-block;
+    }
+    div.service{
+        width: 95%;
+        height: 130px;
+        margin: 2.5%;
+        padding: 5px;
+    }
+    
+    div.tour button{
+        background-color: #00AB8C;
+        color: white;
+        width: 35px;
+        height: 35px;
+        border-radius: 25px;
+        float: right;
+        font-size: 16pt;
+        font-weight: bold;
+    }
+
+    div.service button{
+        background-color: #00AB8C;
+        color: white;
+        width: 35px;
+        height: 35px;
+        border-radius: 25px;
+        float: right;
+        font-size: 16pt;
+        font-weight: bold;
+        margin-right: 25px;
     }
 }

@@ -103,6 +103,25 @@ div.service span{
         padding: 0;
     }
 
+    hr{
+        width: 98%;
+        margin-left: 0;
+    }
+
+    div.tours, div.experience{
+        height: 800px;
+        overflow-y: scroll;
+    }
+
+    div.tour{
+        margin: 10px;
+    }
+
+    div.service{
+        width: 95%;
+        margin: 10px;
+    }
+
     div.card-body h5{
         text-align: left;
     }
