@@ -1,18 +1,85 @@
+<div class="body">
+    <div class="row buttons">
+        <div class="col-lg-4 col-md-4 col-sm- 12 col-12">
+            <button class="btn">Budget</button>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm- 12 col-12">
+            <button class="btn">Legal Content</button>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm- 12 col-12">
+            <button class="btn">Tour Schedule</button>
+        </div>
+    </div>
+    <div class="row data">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <h3>Guider Details</h3>
+            <span>Name: </span>Example<br>
+            <span>Id: </span>38974598<br>
+            <hr>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <h3>Client Details</h3>
+            <span>Name: </span>Example<br>
+            <span>Id: </span>38974598<br>
+            <hr>
+        </div>
+    </div>
+    <div class="row content">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <h3>Tour Dates</h3>
+            <span>From:</span>
+            <input type="date"> <br>
+            <span>Until:</span>
+            <input type="date" style="margin-left: 14px"> <br>
+            <div class="card">
+                <img src="../../../assets/images/foto1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lomé Tour</h5>
+                    <p class="card-text">Basic tour via the main building of the capital.</p>
+                    <ul>
+                        <li>Pre-colonial - post period path</li>
+                        <li>Visit Congress Palace</li>
+                        <li>Visit to headquarters of ECOWAS</li>
+                        <li>Visit to University of Lomé</li>
+                    </ul>
+                    <span>Total Amount: </span> 100,00$
+                </div>
+            </div>
+            <div class="card">
+                <img src="../../../assets/images/foto1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lomé Tour</h5>
+                    <p class="card-text">Basic tour via the main building of the capital.</p>
+                    <ul>
+                        <li>Pre-colonial - post period path</li>
+                        <li>Visit Congress Palace</li>
+                        <li>Visit to headquarters of ECOWAS</li>
+                        <li>Visit to University of Lomé</li>
+                    </ul>
+                    <span>Total Amount: </span> 100,00$
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row amount">
+       <p><span>Total amount is:</span><strong> 200,00$</strong></p>
+    </div>
+</div>
+<!--
 <div class="card">
     <div class="card-header">
-        <ul class="nav nav-pills card-header-pills">
-            <li class="nav-item">
-                <a class="nav-link active subText" href="#">Budget</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link subText" href="#">Legal Content</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link subText" href="#">Tour Scheddule</a>
-            </li>
-        </ul>
-        <img id="exportToIcon" src="../../../assets/images/budgetIcons/exportIcon.PNG" align="right"
-            onmouseover="exportTo()">
+        <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-4 col-4">
+                <button class="nav-link active subText">Budget</button>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-4 col-4">
+                <button class="nav-link active subText">Legal Content</button>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-4 col-4">
+                <button class="nav-link active subText">Tour Schedule</button>
+            </div>
+        </div>
+        <img id="exportToIcon" src="../../../assets/images/export.png" onmouseover="exportTo()">
     </div>
     <div class="card-body">
         <div class="row">
@@ -20,20 +87,20 @@
                 <h5 class="card-title title">Guider Details</h5>
                 <form style="inline-size: initial">
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label subText">Name</label>
-                        <div class="col-sm-10">
+                        <label class="col-sm-3 col-form-label subText">Name</label>
+                        <div class="col-sm-9">
                             <input type="text" class="form-control-plaintext" id="GuiderBudgetName"
                                 value="Example Example">
                         </div>
 
-                        <label class="col-sm-2 col-form-label subText">Id</label>
-                        <div class="col-sm-10">
+                        <label class="col-sm-3 col-form-label subText">Id</label>
+                        <div class="col-sm-9">
                             <input type="text" readonly class="form-control-plaintext" id="GuiderBudgetId"
                                 value="123456789">
                         </div>
 
-                        <label class="col-sm-2 col-form-label subText">Phone</label>
-                        <div class="col-sm-10">
+                        <label class="col-sm-3 col-form-label subText">Phone</label>
+                        <div class="col-sm-9">
                             <input type="text" class="form-control-plaintext" id="GuiderBudgetPhone"
                                 value="(+34) 111 11 11 11">
                         </div>
@@ -46,20 +113,20 @@
                 <h5 class="card-title title">Client Details</h5>
                 <form style="inline-size: initial">
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label subText">Name</label>
-                        <div class="col-sm-10">
+                        <label class="col-sm-3 col-form-label subText">Name</label>
+                        <div class="col-sm-9">
                             <input type="text" class="form-control-plaintext" id="UserBudgetName"
                                 value="Example Example">
                         </div>
 
-                        <label class="col-sm-2 col-form-label subText">Id</label>
-                        <div class="col-sm-10">
+                        <label class="col-sm-3 col-form-label subText">Id</label>
+                        <div class="col-sm-9">
                             <input type="text" readonly class="form-control-plaintext" id="UserBudgetId"
                                 value="987654321">
                         </div>
 
-                        <label class="col-sm-2 col-form-label subText">Phone</label>
-                        <div class="col-sm-10">
+                        <label class="col-sm-3 col-form-label subText">Phone</label>
+                        <div class="col-sm-9">
                             <input type="text" class="form-control-plaintext" id="UserBudgetPhone"
                                 value="(+34) 222 22 22 22">
                         </div>
@@ -75,29 +142,28 @@
             </div>
             <div class="card-body">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-2">
                         <p class="subTitle">Tour dates</p>
                     </div>
-                    <div class="col-4">
-                        <label class="subTitle">From</label>
-                        <input type="date">
+                    <div class="col-5">
+                        <label class="subTitle">From </label>
+                        <input class="date" type="date">
                     </div>
-                    <div class="col-4">
-                        <label class="subTitle">Until</label>
-                        <input type="date">
+                    <div class="col-5">
+                        <label class="subTitle">Until </label>
+                        <input class="date" type="date">
                     </div>
                 </div>
                 <form>
                     <div class="form-inline">
-                        <p class="subTitle">Location</p>
-                        <input type="text">
+                        <p class="subTitle">Location <input class="date" type="text"></p>
                     </div>
                 </form>
             </div>
             <div class="card-footer">
-                <!--Basic Tour city Lomé-->
+                Basic Tour city Lomé
                 <div class="card mb-3" style="border-style: solid; border-width: 10px">
-                    <img src="../../../assets/images/togoToursImages/TourLome.jpg" alt="Tour Lomé">
+                    <img class="destiny" src="../../../assets/togoToursImages/TourLome.jpg" alt="Tour Lomé">
                     <div class="card-body">
                         <h5 class="card-title title">Lomé Tour</h5>
                         <div class="row">
@@ -117,12 +183,12 @@
                                 <div style="text-align: center">2</div>
                             </div>
                             <div class="col-2">
-                                    <p class="subText" style="text-align: center">Price</p>
-                                    <div style="text-align: center">15</div>
-                                    <div style="text-align: center">10</div>
-                                    <div style="text-align: center">9</div>
-                                    <div style="text-align: center">20</div>
-                                </div>
+                                <p class="subText" style="text-align: center">Price</p>
+                                <div style="text-align: center">15</div>
+                                <div style="text-align: center">10</div>
+                                <div style="text-align: center">9</div>
+                                <div style="text-align: center">20</div>
+                            </div>
                             <div class="col-2">
                                 <p class="subText" style="text-align: center">Amount</p>
                                 <div style="text-align: center">30</div>
@@ -133,41 +199,42 @@
                         </div>
                     </div>
                 </div>
-                <!--Basic Tour Fazao-Malfakassa National Park-->
+                Basic Tour Fazao-Malfakassa National Park
                 <div class="card mb-3" style="border-style: solid; border-width: 10px">
-                        <img src="../../../assets/images/togoToursImages/togoJungle.png" alt="Tour Togo Jungle">
-                        <div class="card-body">
-                            <h5 class="card-title title">Tour Togo Jungle</h5>
-                            <div class="row">
-                                <div class="col-6">
-                                    <p class="card-text subText">Basic tour the jungle of Fazao-Malfakassa National Park</p>
-                                    <div>Service: Football tours (Stade de Kégué, Stade Omnisport)</div>
-                                    <div>Service: Forest d' Amakpave park course</div>
-                                    <div>Service: Haho Baloue Cascade park course</div> 
-                                </div>
-                                <div class="col-2">
-                                    <p class="subText" style="text-align: center">Quantity</p>
-                                    <div style="text-align: center">2</div>
-                                    <div style="text-align: center">2</div>
-                                    <div style="text-align: center">2</div>
-                                </div>
-                                <div class="col-2">
-                                    <p class="subText" style="text-align: center">Price</p>
-                                    <div style="text-align: center">45</div>
-                                    <div style="text-align: center">20</div>
-                                    <div style="text-align: center">100</div>
-                                </div>
-                                <div class="col-2">
-                                        <p class="subText" style="text-align: center">Amount</p>
-                                        <div style="text-align: center">90</div>
-                                        <div style="text-align: center">40</div>
-                                        <div style="text-align: center">200</div>
-                                    </div>
+                    <img class="destiny" src="../../../assets/togoToursImages/togoJungle.png" alt="Tour Togo Jungle">
+                    <div class="card-body">
+                        <h5 class="card-title title">Tour Togo Jungle</h5>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="card-text subText">Basic tour the jungle of Fazao-Malfakassa National Park</p>
+                                <div>Service: Football tours (Stade de Kégué, Stade Omnisport)</div>
+                                <div>Service: Forest d' Amakpave park course</div>
+                                <div>Service: Haho Baloue Cascade park course</div>
+                            </div>
+                            <div class="col-2">
+                                <p class="subText" style="text-align: center">Quantity</p>
+                                <div style="text-align: center">2</div>
+                                <div style="text-align: center">2</div>
+                                <div style="text-align: center">2</div>
+                            </div>
+                            <div class="col-2">
+                                <p class="subText" style="text-align: center">Price</p>
+                                <div style="text-align: center">45</div>
+                                <div style="text-align: center">20</div>
+                                <div style="text-align: center">100</div>
+                            </div>
+                            <div class="col-2">
+                                <p class="subText" style="text-align: center">Amount</p>
+                                <div style="text-align: center">90</div>
+                                <div style="text-align: center">40</div>
+                                <div style="text-align: center">200</div>
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="text title" style="text-align: center">Total amount is: 150$</div>
+    <div class="text title amount" style="text-align: center">Total amount is: 150,00$</div>
 </div>
+-->

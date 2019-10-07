@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError  } from 'rxjs';
 import { User } from '../models/user';
 import { retry, catchError } from 'rxjs/operators';
+import { UserData } from '../api/userApi';
 
 
 @Injectable({
@@ -20,12 +21,15 @@ export class ApiService {
       'Content-Type': 'application/json'
     })
   }
-
-  createUser(): Observable<User> {
-    return this.http.post<User>(this.apiURL + '/users/registerForm', User);
+//User's CRUD methods
+  createUser(userInfo): Observable<User> {
+    return this.http.post<User>(this.apiURL + '/users/registerForm', userInfo).pipe(
+      retry(1),
+      catchError(this.handleError)
+    );
   }
-  userLogin(): Observable<User> {
-    return this.http.post<User>(this.apiURL + '/users/login', User)
+  userLogin(user) {
+    return this.http.post(this.apiURL + '/users/login', user);
   }
   editUser(id, user): Observable<User> {
     return this.http.put<User>(this.apiURL + '/users/:uid' + id, user);
@@ -33,5 +37,46 @@ export class ApiService {
   deleteUser(id): Observable<boolean> {
     return this.http.delete<boolean>(this.apiURL + '/users/:uid' + id);
   }
+
+// User's Aux methods
+    // Error handling
+    handleError(error) {
+      let errorMessage = '';
+      if(error.error instanceof ErrorEvent) {
+        // Get client-side error
+        errorMessage = error.error.message;
+      } else {
+        // Get server-side error
+        errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
+      }
+      window.alert(errorMessage);
+      return throwError(errorMessage);
+   }
+
+/*
+FILTERS TO DO:
+Destination
+Destination + language
+Destination + busyDates
+Destination + Tourinterest
+Destination + Language + BusyDates
+Destination + Language + Interest
+Destination + BusyDates + Interest
+Destination + Language + BusyDates + Interest
+*/
+
+//Filter By Location
+   findByLocation(location): Observable<UserData> {
+     //console.log(this.apiURL + '/guider/destinationloc/' + location)
+    return this.http.get<UserData>(this.apiURL + '/guider/destinationloc/' + location);
+   }
+
+
+   //Filter By Language & Location
+   findByLanguageAndLocation(location,language) {
+    return this.http.get(this.apiURL + '/guider/destinationll/'+ location +"/"+ language);
+   }
+
+
 
 }

@@ -1,0 +1,249 @@
+div.body{
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  div.row{
+    height: 100%;
+    background-color: #003943;
+  }
+  
+  div.chats{
+    height: 90%;
+    background-color: white;
+    border-radius: 25px;
+    margin: auto 1.25%;
+  }
+  
+  div.conversation{
+    height: 90%;
+    margin: auto 1.25%;
+    padding: 0;
+  }
+  
+  div.messages2{
+    width: 98%;
+    background-color: white;
+    border-radius: 25px;
+  }
+  
+  div.text{
+    width: 100%;
+    height: 25%;
+    border-radius: 25px;
+    margin: 4% auto;
+  }
+  
+  div.textarea{
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 0;
+  }
+  
+  div.text button.send{
+    width: 100%;
+    height: 40%;
+    margin-bottom: 30%;
+    border-radius: 15px;
+    background-color: #00AB8C;
+    border: 2px solid white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+  
+  div.text button.attach{
+    width: 100%;
+    height: 40%;
+    border-radius: 15px;
+    background-color: #F1B321;
+    border: 2px solid white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .usuary{
+    padding-top: 10px;
+    height: 623px;
+    overflow-y: scroll;
+  }
+  
+  .friend{
+    height: 90px;
+    list-style: none;
+    margin-left: -40px;
+  }
+  
+  img{
+    width: 70px;
+    float: left;
+  }
+  
+  .name{
+    color:#00AC8B;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: 3%;
+  }
+  
+  .last-message{
+    color:#003943;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.7em;
+    margin-top: -2px;
+  }
+  
+  .text-small{
+    width: 80%;
+    height: 10px;
+  }
+  
+  .text-hour{
+    color:#003943;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8em;
+    float: right;
+    margin-right: 3%;
+  }
+  
+  .text-number{
+    background-color: #FF1E42;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    float: right;
+    margin-right: 4%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  
+  div.buttons{
+    background-color: #00AB8C;
+    margin-top: 20px;
+  }
+  
+  .messages{
+    width: 97%;
+    height: 520px;
+    margin-left: 1%;
+    float: right;
+    margin-right: 2%;
+    margin-top: 1px;
+    overflow-y: scroll;
+  }
+  
+  .text-check{
+    background-color: #00AC8B;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    float: right;
+    margin-right: 4%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  
+  .avatar2{
+    float: right;
+  }
+  
+  .text-hour2{
+    color:#003943;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8em;
+    float: left;
+    margin-left: -100%;
+  }
+  .name2{
+    color:#F1B321;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-left: 50%;
+  }
+  
+  .message{
+    margin-left: -30px;
+  }
+  
+  .reloj{
+    width: 20px;
+    margin-right: 1px;
+    margin-top: 2px;
+  }
+  
+  div.space div.trap{
+      background-color: white;
+      padding: 0;
+      border: 0.5px solid #00AB8C;
+      border-radius: 50px;
+      margin-top: 20px;
+  }
+
+  div.space div.trap div{
+    margin: 0;
+    }
+  
+  div.space textarea{
+    width: 90%;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 5%;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    border-right: none;
+    padding: 0 20px 0 0;
+  }
+
+  div.text-message{
+    margin-top: 50px;
+  }
+  #search{
+    border: 1px solid black;
+  }
+  .search-wrapper{
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 10px; 
+    border: 0.5px solid #00AB8C;
+    border-radius: 25px;
+    width: 90%;
+    height: 30px;
+    padding-right: 5px;
+    margin-left: 2%;
+  }
+  input.search{
+    border: none;
+    width: 87%;
+    height: 28px;
+    border-radius: 25px;
+    padding-left: 10px;
+
+  }
+  .search-wrapper a{
+    color: #CCD1D1;
+  }
+
+  .search-wrapper .fa-paperclip{
+    margin-right: 5px;
+  }
+
+  .search-wrapper .fa-paper-plane{
+    color: #00AB8C;
+  }
+
+  div.menu-res{
+    background-image: url(../../../assets/desktop_bg.jpg);
+    padding: 0;
+    margin: 0;
+}

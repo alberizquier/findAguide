@@ -1,65 +1,38 @@
 <div class="contenedor">
-    <div class="formulario" *ngIf="show">
-        <h1>Filters</h1>
+    <div class="formulario">
+        <h4>Filters</h4>
         <hr>
-
         <div class="row">
 
-            <div class="col-4" style="height: 350px">
-                <h3>Interests</h3>
-                <br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">Culture</label>
+            <div class="interest col-lg-3 col-md-3 col-sm-3 col-12">
+                <h5>Interests</h5>
+                <div class="row">
+                    <div class="col col-lg-6 col-md-6 col-sm-12 col-12"><button class="btn btn-lg">Culture</button></div>
+                    <div class="col col-lg-6 col-md-6 col-sm-12 col-12"><button class="btn btn-lg">Sports</button></div>
                 </div>
-
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">Native Things</label>
-                </div>
-
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">Sports</label>
-                </div>
-
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">Party</label>
+                <div class="row">
+                    <div class="col col-lg-6 col-md-6 col-sm-12 col-12"><button class="btn btn-lg">Native's</button></div>
+                    <div class="col col-lg-6 col-md-6 col-sm-12 col-12"><button class="btn btn-lg">Leisure</button></div>
                 </div>
             </div>
 
-
-
-            <div class="col-4" style="height: 350px">
-                <h3>Guider Language</h3>
-                <br>
-                <div class="input-group mb-3">
-
-                    <div class="input-group-prepend">
-                        <label class="input-group-text" for="inputGroupSelect01">Language</label>
-                    </div>
-                    <select class="custom-select" id="inputGroupSelect01">
-                        <option selected>Choose...</option>
-                        <option value="1">English</option>
-                        <option value="2">French</option>
-                        <option value="3">Spanish</option>
-                    </select>
-                </div>
+            <div class="dates col-lg-3 col-md-3 col-sm-3 col-12">
+                <h5>Dates</h5>
+                Departure Date:
+                <input class="date" type="date" required id="date"><br>
+                Return Date:
+                <input class="date" type="date" required id="date1"><br>
             </div>
 
-
-
-            <div class="col-4" style="height: 350px">
-                <h3>Dates</h3>
-
-                <br>
-                <p>Departure Date:</p>
-                <input class="date" type="date" required id="date" /><br>
-                <p>Return Date:</p>
-                <input class="date" type="date" required id="date1" /><br>
+            <div class="lang col-lg-3 col-md-3 col-sm-3 col-12">
+                <h5>Guider Language</h5>
+                <input class="language" placeholder="English" type="text" (keyup)="filterByLanguageAndLocation()" [(ngModel)]="userLoc.language">
+                <h5>Destination</h5>
+                <input class="destination"    placeholder="Madrid" type="text" (keyup)="filterByLocation()" [(ngModel)]="userLoc.location">
             </div>
         </div>
-
     </div>
+    <hr>
 </div>
+
+<app-guider-list *ngIf='elements' [guiderList] = "guidersList"></app-guider-list>

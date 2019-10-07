@@ -40,3 +40,13 @@ div.row div.background img{
     width: 50px;
     margin: 10px 0;
 }
+
+div.row div.background a{
+    color: #003943;
+}
+
+@media (min-width: 768px) {
+    div.container {
+        max-width: 100%;
+    }
+}

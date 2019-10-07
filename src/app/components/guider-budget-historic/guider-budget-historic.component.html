@@ -1,17 +1,20 @@
-<h4 style="text-align: center">My Budgets</h4>
+<h4>My Budgets</h4>
 <div class="row">
-    <div class="col-4">
-        <app-side-nav-bar></app-side-nav-bar>
-    </div>
-    <div class="col-4">
+    <div class="side col-lg-3 col-md-3 col-sm-12 col-12">
         <!--Guider Budget Filters-->
-        <div>
-            <button type="button" class="btn btn-outline-primary btn-lg ">Pending</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg ">Accepted</button>
-            <button type="button" class="btn btn-outline-success btn-lg ">Over</button>
+        <div class="row buttons">
+            <div class="col-lg-12 col-md-12 col-sm- 12 col-12">
+                <button class="btn">Accepted</button>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm- 12 col-12">
+                <button class="btn">Over</button>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm- 12 col-12">
+                <button class="btn" style="background-color: #F1B321">Pending</button>
+            </div>
         </div>
         <!--End Guider Budget Filters-->
-        <ul>
+        <div class="budgets">
             <div class="card">
                 <div class="card-header">Budget 1</div>
                 <div class="card-body">Hola budget 1 details</div>
@@ -28,10 +31,9 @@
                 <div class="card-header">Budget 4</div>
                 <div class="card-body">Hola budget 4 details</div>
             </div>
-
-        </ul>
+        </div>
     </div>
-    <div class="col-4">
+    <div class="col-lg-9 col-md-9 d-lg-block d-md-block d-sm-none d-none">
         <app-guider-budget></app-guider-budget>
     </div>
 </div>

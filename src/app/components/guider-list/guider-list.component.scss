@@ -1,3 +1,7 @@
+div.container{
+    padding-right: 3%;
+}
+
 h3{
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
@@ -43,9 +47,9 @@ div.card:hover{
 }
 
 div.card div.img{
-    background-image: url(../../../assets/images/woman_1.jpg);
+
     background-size: cover;
-    height: 50%;
+    height: 100%;
     display: flex;
     align-items: flex-end;
     padding: 0;
@@ -77,7 +81,7 @@ div.data div.tours{
     line-height: 1.0;
 }
 
-div.data div.rating{
+div.data div.rating img{
     font-size: 10pt;
     height: 15px;
     display: flex;
@@ -85,5 +89,6 @@ div.data div.rating{
 }
 
 div.data div.rating img{
-    width: 7%;
+    width: 22%;
 }
+

@@ -1,48 +1,50 @@
+a{
+  width: 50%;
+  margin: 0 auto;
+}
 .row{
   margin-left: 5px;
   margin-right: 5px;
-}
-.card{
+ }
+ .card{
   border:none;
-}
-.card-img-top{
-  width: 50px;
-  margin-left: 5px;
-}
-.card-title{
+  margin-bottom: 20px;
+ }
+ .card-title{
   font-family: 'Raleway', sans-serif;
   font-weight:  bold;
   color:#003943;
-  font-size: 0.3em;
+  font-size: 12pt;
   margin-left:14px;
-}
-.card-text{
+ }
+ .card-text{
   font-family: 'Raleway', sans-serif;
   color:#003943;
-  font-size: 0.3em;
+  font-size: 12pt;
   margin-top: -10px;
   margin-left: 5px;
-}
-h4{
-  font-size: 0.73em;
+ }
+ h4{
+  font-size: 18pt;
   font-family: 'Ubuntu', sans-serif;
   color:#003943;
   margin-left: 25px;
-  margin-top: 10px;
-}
-.h42{
+  margin-top: 20px;
+ }
+ .h42{
   margin-left: 19px;
-}
-.card-body {
-padding: 0em;
-}
-@media only screen  and (min-width : 1224px) {
-  .card-img-top{
-    width: 150px;
-    margin-left: 5px;
+ }
+ .card-body {
+ padding: 0em;
+ text-align: center;
+ }
+ @media only screen and (min-width : 1224px) {
+  a{
+    width: 60%;
+    margin: 0 auto;
   }
   h4{
-    font-size: 2em;
+    font-size: 16pt;
     font-family: 'Ubuntu', sans-serif;
     color:#003943;
     margin-left: 25px;
@@ -55,24 +57,27 @@ padding: 0em;
   .card-body {
   padding: 0em;
   }
+  .card-body p {
+    margin: 5px auto;
+    }
   .card-title{
     font-family: 'Raleway', sans-serif;
     font-weight:  bold;
     color:#003943;
     font-size: 1em;
-    margin-left:14px;
-    margin-left: 35px;
+    margin: 0 auto;
   }
   .card-text{
     font-family: 'Raleway', sans-serif;
     color:#003943;
     font-size: 1em;
     margin-top: -10px;
-    margin-left: 15px;
   }
   .row{
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 20px;
   }
-}
+ }
+ 
+ 

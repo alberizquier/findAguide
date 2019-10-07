@@ -1,0 +1,16 @@
+<nav>
+    <a routerLink="/main" routerLinkActive="active"><img src="../../../assets/logo/logo_white.png"
+            class="logo" alt=""></a>
+        <button class="slide" (click)="show=!show"><img src="../../../assets/images/nav.png" alt=""></button>
+        <div class="menu" *ngIf=show>
+            <hr>
+            <p><a routerLink="/guider-profile" routerLinkActive="active">Profile</a></p>
+            <hr>
+            <p><a routerLink="/messages" routerLinkActive="active">Messages</a></p>
+            <hr>
+            <p><a routerLink="/guider-budget-historic" routerLinkActive="active">My Trips</a></p>
+            <hr>
+            <p><a routerLink="" routerLinkActive="active">Log Out</a></p>
+        </div>
+</nav>
+<router-outlet></router-outlet>

@@ -1,5 +1,6 @@
 export class User {
     name: String;
+    lastName: String;
     birthDate: Date;
     email: String;
     picture: String;
