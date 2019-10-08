@@ -1,0 +1,34 @@
+h4{
+    margin: 20px 0;
+    text-align: center;
+}
+
+div.side{
+    padding-right: 0;
+}
+
+button.btn{
+    text-align: center;
+    color: white;
+    background-color: #00AB8C;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+div.budgets div{
+    width: 100%;
+}
+
+a{
+    color: black;
+}
+
+div.menu-res{
+    background-image: url(../../../assets/desktop_bg.jpg);
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 700px){
+    
+}

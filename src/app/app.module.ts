@@ -28,6 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { NewBudgetComponent } from './components/new-budget/new-budget.component';
 import { UserEditProfileComponent } from './components/user-edit-profile/user-edit-profile.component';
+import { MyTripsComponent } from './components/my-trips/my-trips.component';
+import { UserTripsComponent } from './components/user-trips/user-trips.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +58,9 @@ import { UserEditProfileComponent } from './components/user-edit-profile/user-ed
     AuthComponent,
     MessagesComponent,
     NewBudgetComponent,
-    UserEditProfileComponent
+    UserEditProfileComponent,
+    MyTripsComponent,
+    UserTripsComponent
   ],
   imports: [
     BrowserModule,

@@ -3,13 +3,13 @@
     <div class="card-header">
       <div class="row">
         <div class="col text-center">
-          <img class="imgGuideProfilePic" src="../../../assets/images/month-destinations/liam.png"
+          <img class="imgGuideProfilePic" [src]="picture"
             alt="EidurGudjohnsen">
         </div>
       </div>
       <div class="row">
         <div class="col-12 text-center">
-          <h4>Eidur Gudjohnsen</h4>
+          <h4>{{name}}</h4>
           <div class='wrapper' style='display: inline-block;text-align :center'>
             <img src="../../../assets/images/star_2_white.png" alt="">
             <img src="../../../assets/images/star_2_white.png" alt="">
@@ -24,9 +24,9 @@
     <div class="card-body">
       <div class="nav flex-column nav-pills" style="font-family: 'Raleway', sans-serif;" id="v-pills-tab" role="tablist"
         aria-orientation="vertical">
-        <a class="nav-link" id="v-pills-profile-tab" routerLink="/guider-edit-profile" routerLinkActive="active">Profile</a>
+        <a class="nav-link" id="v-pills-profile-tab" routerLink="/user-edit-profile" routerLinkActive="active">Profile</a>
         <a class="nav-link" id="v-pills-messages-tab" routerLink="/messages" routerLinkActive="active">Messages</a>
-        <a class="nav-link" id="v-pills-mytrips-tab" routerLink="/guider-budget-historic" routerLinkActive="active">My Trips</a>
+        <a class="nav-link" id="v-pills-mytrips-tab" routerLink="/my-trips" routerLinkActive="active">My Trips</a>
         <a class="nav-link" id="v-pills-logout-tab" routerLink="" routerLinkActive="active">Log Out</a>
       </div>
     </div>

@@ -1,38 +1,58 @@
-<div class="contenedor">
-    <div class="formulario">
-        <h4>Filters</h4>
-        <hr>
-        <div class="row">
-
-            <div class="interest col-lg-3 col-md-3 col-sm-3 col-12">
-                <h5>Interests</h5>
-                <div class="row">
-                    <div class="col col-lg-6 col-md-6 col-sm-12 col-12"><button class="btn btn-lg">Culture</button></div>
-                    <div class="col col-lg-6 col-md-6 col-sm-12 col-12"><button class="btn btn-lg">Sports</button></div>
-                </div>
-                <div class="row">
-                    <div class="col col-lg-6 col-md-6 col-sm-12 col-12"><button class="btn btn-lg">Native's</button></div>
-                    <div class="col col-lg-6 col-md-6 col-sm-12 col-12"><button class="btn btn-lg">Leisure</button></div>
-                </div>
-            </div>
-
-            <div class="dates col-lg-3 col-md-3 col-sm-3 col-12">
-                <h5>Dates</h5>
-                Departure Date:
-                <input class="date" type="date" required id="date"><br>
-                Return Date:
-                <input class="date" type="date" required id="date1"><br>
-            </div>
-
-            <div class="lang col-lg-3 col-md-3 col-sm-3 col-12">
-                <h5>Guider Language</h5>
-                <input class="language" placeholder="English" type="text" (keyup)="filterByLanguageAndLocation()" [(ngModel)]="userLoc.language">
-                <h5>Destination</h5>
-                <input class="destination"  type="text" (keyup)="filterByLocation()" [(ngModel)]="userLoc.location">
-            </div>
+<div>
+    <div class="row sup d-lg-none d-md-none d-sm-block d-block col-sm-12 col-12">
+        <div class="menu-res d-lg-none d-md-none d-sm-block d-block col-sm-12 col-12">
+            <app-nav-bar-sup></app-nav-bar-sup>
         </div>
     </div>
-    <hr>
-</div>
+    <div class="row">
+        <div class="menu d-lg-block d-md-block d-sm-none d-none col-lg-2 col-md-2">
+            <app-side-nav-bar></app-side-nav-bar>
+        </div>
+        <div class="right col-lg-10 col-md-10 col-sm-12 col-12">
+            <div class="contenedor">
+                <div class="formulario">
+                    <h4>Filters</h4>
+                    <hr>
+                    <div class="row">
 
-<app-guider-list *ngIf='elements' [guiderList] = "guidersList"></app-guider-list>
+                        <div class="interest col-lg-3 col-md-3 col-sm-3 col-12">
+                            <h5>Interests</h5>
+                            <div class="row">
+                                <div class="col col-lg-6 col-md-6 col-sm-12 col-12"><button
+                                        class="btn btn-lg">Culture</button></div>
+                                <div class="col col-lg-6 col-md-6 col-sm-12 col-12"><button
+                                        class="btn btn-lg">Sports</button></div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-lg-6 col-md-6 col-sm-12 col-12"><button
+                                        class="btn btn-lg">Native's</button></div>
+                                <div class="col col-lg-6 col-md-6 col-sm-12 col-12"><button
+                                        class="btn btn-lg">Leisure</button></div>
+                            </div>
+                        </div>
+
+                        <div class="dates col-lg-3 col-md-3 col-sm-3 col-12">
+                            <h5>Dates</h5>
+                            Depart Date:
+                            <input class="date" type="date" required id="date"><br>
+                            Return Date:
+                            <input class="date" type="date" required id="date1"><br>
+                        </div>
+
+                        <div class="lang col-lg-3 col-md-3 col-sm-3 col-12">
+                            <h5>Guider Language</h5>
+                            <input class="language" placeholder="English" type="text"
+                                (keyup)="filterByLanguageAndLocation()" [(ngModel)]="userLoc.language">
+                            <h5 class="destination">Destination</h5>
+                            <input class="destination" type="text" (keyup)="filterByLocation()"
+                                [(ngModel)]="userLoc.location">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <app-guider-list *ngIf='elements' [guiderList]="guidersList"></app-guider-list>
+        </div>
+    </div>
+</div>

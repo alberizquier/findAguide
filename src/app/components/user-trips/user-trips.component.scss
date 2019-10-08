@@ -1,0 +1,86 @@
+button.btn{
+    text-align: center;
+    color: white;
+    background-color: #00AB8C;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+div.data{
+    padding: 10px 10px;
+}
+
+div.data span{
+    color: #00AB8C;
+    font-weight: bold;
+}
+
+div.data hr{
+    border: 0.5px solid #00AB8C;
+}
+
+div.content{
+    margin-top: -5px;
+    padding: 0 10px;
+}
+
+div.content span{
+    color: #00AB8C;
+    font-weight: bold;
+}
+
+div.content input{
+    margin-top: 5px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border: 0.5px solid #00AB8C;
+    border-radius: 25px;
+}
+
+div.content div.card{
+    margin-top: 10px;
+}
+
+div.content div.card ul{
+    list-style: none;
+    margin-left: -20px;
+}
+
+h5{
+    font-family: 'Ubuntu', sans-serif;
+    color: #00AB8C;
+}
+
+div.amount{
+    padding: 10px 10px;
+    font-size: 16pt;
+}
+
+div.amount span{
+    color: #00AB8C;
+    font-weight: bold;
+}
+
+div.amount p{
+    margin: 0 auto;
+}
+
+div.menu-res{
+    background-image: url(../../../assets/desktop_bg.jpg);
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 700px){
+    div.buttons{
+        padding: 10px 10px;
+    }
+
+    button.btn{
+        text-align: center;
+        color: white;
+        background-color: #00AB8C;
+        width: 80%;
+        border-bottom: 1px solid white;
+    }
+}

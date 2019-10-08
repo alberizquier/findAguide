@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { type } from 'os';
+
 
 @Component({
   selector: 'app-new-budget',
@@ -24,7 +24,7 @@ export class NewBudgetComponent implements OnInit {
 
 
   add() {
-    
+
   }
 
 }

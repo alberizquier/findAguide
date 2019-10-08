@@ -24,6 +24,8 @@ import { MainComponent } from './components/main/main.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { NewBudgetComponent } from './components/new-budget/new-budget.component';
 import { UserEditProfileComponent } from './components/user-edit-profile/user-edit-profile.component';
+import { MyTripsComponent } from './components/my-trips/my-trips.component';
+import { UserTripsComponent } from './components/user-trips/user-trips.component';
 
 
 const routes: Routes = [
@@ -45,12 +47,14 @@ const routes: Routes = [
   { path: 'month-destinations', component: MonthDestinationsComponent },
   { path: 'nav-bar-sup', component: NavBarSupComponent },
   { path: 'navegador', component: NavegadorComponent },
-  { path: 'selector', component: SelectorComponent },
+  { path: 'login/selector', component: SelectorComponent },
   { path: 'register-form', component: RegisterFormComponent },
   { path: 'side-nav-bar', component: SideNavBarComponent },
   { path: 'user-chat', component: UserChatComponent },
   { path: 'new-budget', component: NewBudgetComponent },
   { path: 'user-edit-profile', component: UserEditProfileComponent },
+  { path: 'my-trips', component: MyTripsComponent},
+  { path: 'user-trips', component: UserTripsComponent},
 ];
 
 @NgModule({

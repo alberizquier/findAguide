@@ -1,0 +1,61 @@
+<div>
+    <div class="row sup">
+        <div class="menu-res d-lg-none d-md-none d-sm-block d-block col-sm-12 col-12">
+            <app-nav-bar-sup></app-nav-bar-sup>
+        </div>
+    </div>
+    <div class="row">
+        <div class="menu d-lg-block d-md-block d-sm-none d-none col-lg-2 col-md-2">
+            <app-side-nav-bar></app-side-nav-bar>
+        </div>
+        <div class="right col-lg-10 col-md-10 col-sm-12 col-12">
+            <h4>My Trips</h4>
+            <div class="row">
+                <div class="side col-lg-3 col-md-3 col-sm-12 col-12">
+                    <!--Guider Budget Filters-->
+                    <div class="row buttons">
+                        <div class="col-lg-12 col-md-12 col-sm- 12 col-12">
+                            <button class="btn">Accepted</button>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm- 12 col-12">
+                            <button class="btn">Over</button>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm- 12 col-12">
+                            <button class="btn" style="background-color: #F1B321">Pending</button>
+                        </div>
+                    </div>
+                    <!--End Guider Budget Filters-->
+                    <div class="budgets">
+                        <div class="card">
+                            <a routerLink="/guider-budget" routerLinkActive="active">
+                                <div class="card-header">Tour Paris</div>
+                            </a>
+                            <div class="card-body">Hola budget 1 details</div>
+                        </div>
+                        <div class="card">
+                            <a routerLink="/guider-budget" routerLinkActive="active">
+                                <div class="card-header">Tour Madrid</div>
+                            </a>
+                            <div class="card-body">Hola budget 2 details</div>
+                        </div>
+                        <div class="card">
+                            <a routerLink="/guider-budget" routerLinkActive="active">
+                                <div class="card-header">Tour Rome</div>
+                            </a>
+                            <div class="card-body">Hola budget 3 details</div>
+                        </div>
+                        <div class="card">
+                            <a routerLink="/guider-budget" routerLinkActive="active">
+                                <div class="card-header">Tour Berlin</div>
+                            </a>
+                            <div class="card-body">Hola budget 4 details</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9 d-lg-block d-md-block d-sm-none d-none">
+                    <app-user-trips></app-user-trips>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

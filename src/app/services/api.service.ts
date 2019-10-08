@@ -34,6 +34,9 @@ export class ApiService {
   editUser(id, user): Observable<User> {
     return this.http.put<User>(this.apiURL + '/users/:uid' + id, user);
   }
+  getUser(email){
+    return this.http.get(this.apiURL + '/users/' + email)
+  }
   deleteUser(id): Observable<boolean> {
     return this.http.delete<boolean>(this.apiURL + '/users/:uid' + id);
   }
